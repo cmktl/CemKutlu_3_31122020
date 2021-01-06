@@ -1,0 +1,35 @@
+.footer {
+	padding: $padding-auto * 2;
+	background-color: $black-gray;
+	&__nav {
+		color: white;
+	}
+	&__logo {
+		max-width: 30%;
+		filter: invert(1);
+	}
+
+	&__list {
+		padding-top: $padding-auto;
+	}
+
+	&__list-item {
+		padding-bottom: 10px;
+
+		& > :nth-child(n + 2) {
+			font-weight: 600;
+		}
+		& > a {
+			color: white;
+			font-family: $font-text;
+			font-weight: 300;
+			text-align: left;
+		}
+	}
+	&__icon {
+		padding-right: 10px;
+		&--first {
+			padding-right: 18px;
+		}
+	}
+}

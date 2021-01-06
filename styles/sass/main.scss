@@ -10,15 +10,15 @@
 // components
 @import 'components/buttons';
 @import 'components/steps';
-@import 'components/restaurants';
+@import 'components/card';
 @import 'components/menu';
 
 //layout
 
 @import 'layout/header';
 @import 'layout/explorer';
-@import 'layout/grid';
 @import 'layout/navigation';
 @import 'layout/footer';
 @import 'layout/localisation';
 @import 'layout/fonctionnement';
+@import 'layout/restaurants';
