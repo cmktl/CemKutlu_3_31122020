@@ -1,0 +1,31 @@
+.fonctionnement {
+	padding-bottom: 25px;
+
+	&__step {
+		max-width: 100%;
+		z-index: 1;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
+	&__button {
+		font-size: 14px;
+		font-weight: 600;
+		padding: 20px;
+		width: 250px;
+		position: relative;
+	}
+	&__number {
+		color: white;
+		background-color: $color-primary;
+		border-radius: 100px;
+		font-size: 12px;
+		padding: 3px 7px 3px 7px;
+		z-index: 2;
+		left: -10px;
+		position: absolute;
+	}
+	&__icon {
+		padding-right: $padding-auto;
+	}
+}

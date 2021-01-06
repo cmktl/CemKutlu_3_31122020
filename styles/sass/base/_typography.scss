@@ -2,6 +2,10 @@ h1 {
 	@include title;
 }
 
+.title {
+	padding: $padding-auto * 3 $padding-auto $padding-auto $padding-auto;
+}
+
 p {
 	@include description;
 }

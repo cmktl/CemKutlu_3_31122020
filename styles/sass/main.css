@@ -117,6 +117,10 @@ h1 {
   padding-bottom: 15px;
 }
 
+.title {
+  padding: 45px 15px 15px 15px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -128,7 +132,7 @@ p {
 .btn {
   border: none;
   padding: 15px;
-  border-radius: 25px;
+  border-radius: 15px;
   margin: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -138,6 +142,7 @@ p {
   background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
   color: white;
   font-size: 15px;
+  border-radius: 25px;
   width: 60%;
 }
 
@@ -198,5 +203,44 @@ p {
 
 .localisation__searchbar::placeholder {
   opacity: 1;
+}
+
+.fonctionnement {
+  padding-bottom: 25px;
+}
+
+.fonctionnement__step {
+  max-width: 100%;
+  z-index: 1;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fonctionnement__button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px;
+  width: 250px;
+  position: relative;
+}
+
+.fonctionnement__number {
+  color: white;
+  background-color: #9356dc;
+  border-radius: 100px;
+  font-size: 12px;
+  padding: 3px 7px 3px 7px;
+  z-index: 2;
+  left: -10px;
+  position: absolute;
+}
+
+.fonctionnement__icon {
+  padding-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

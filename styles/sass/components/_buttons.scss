@@ -1,7 +1,7 @@
 .btn {
 	border: none;
 	padding: $padding-auto;
-	border-radius: 25px;
+	border-radius: 15px;
 	margin: $margin-auto;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
@@ -9,5 +9,6 @@
 .btn-gradient {
 	@include gradient-button;
 	font-size: 15px;
+	border-radius: 25px;
 	width: 60%;
 }
