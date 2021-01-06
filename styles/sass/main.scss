@@ -13,8 +13,11 @@
 @import 'components/restaurants';
 @import 'components/menu';
 
-// layout
-@import '/layout/grid';
-@import '/layout/header';
-@import '/layout/navigation';
-@import '/layout/footer';
+//layout
+
+@import 'layout/header';
+@import 'layout/explorer';
+@import 'layout/grid';
+@import 'layout/navigation';
+@import 'layout/footer';
+@import 'layout/localisation';

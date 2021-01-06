@@ -1,5 +1,18 @@
-// colors
+// typography
+
+$font-title: 'Shrikhand', cursive;
+$font-text: 'Roboto', sans-serif;
+
+// colors themes
 
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+
+// color components
+$dark-gray: rgb(234, 234, 234);
+$light-gray: rgb(246, 246, 246);
+
+// margin & padding
+$margin-auto: 15px;
+$padding-auto: 15px;

@@ -1,4 +1,7 @@
-* {
-	font-family: 'Roboto', sans-serif;
-	font-family: 'Shrikhand', cursive;
+h1 {
+	@include title;
+}
+
+p {
+	@include description;
 }
