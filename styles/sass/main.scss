@@ -8,13 +8,14 @@
 @import 'base/typography';
 
 // components
+@import 'components/banner';
 @import 'components/buttons';
 @import 'components/steps';
 @import 'components/card';
 @import 'components/menu';
 
 //layout
-
+@import 'layout/menu';
 @import 'layout/header';
 @import 'layout/explorer';
 @import 'layout/navigation';

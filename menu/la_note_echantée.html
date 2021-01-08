@@ -14,12 +14,12 @@
 			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="/styles/css/main.css" />
+		<link rel="stylesheet" href="/styles/sass/main.css" />
 		<title>La note echantée</title>
 	</head>
 	<body>
 		<header>
-			<button>retour</button>
+			<a href="/index.html"> retour</a>
 			<img src="/images/logo/ohmyfood@2x.svg" alt="logo oh my food" />
 		</header>
 		<div class="banner">
@@ -71,14 +71,28 @@
 			</section>
 			<button>Commander</button>
 		</main>
-		<footer>
-			<img src="/images/logo/ohmyfood@2x.svg" alt="logo oh my food" />
-			<ul>
-				<li>logo Proposer un restaurant</li>
-				<li>devenir partenaire</li>
-				<li>Mentions légales</li>
-				<li>Contact</li>
-			</ul>
+		<footer class="footer">
+			<nav class="footer__nav">
+				<a href="/index.html"
+					><img
+						class="footer__logo"
+						src="/images/logo/ohmyfood@2x.svg"
+						alt="logo oh my food"
+				/></a>
+
+				<ul class="footer__list">
+					<li class="footer__list-item">
+						<i class="fas fa-utensils footer__icon footer__icon--first"></i>
+						<a href="#">Proposer un restaurant</a>
+					</li>
+					<li class="footer__list-item">
+						<i class="fas fa-hands-helping footer__icon"></i>
+						<a href="#">Devenir partenaire</a>
+					</li>
+					<li class="footer__list-item"><a href="#">Mentions légales</a></li>
+					<li class="footer__list-item"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 		</footer>
 	</body>
 </html>

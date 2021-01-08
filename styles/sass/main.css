@@ -133,6 +133,15 @@ p {
   padding-bottom: 15px;
 }
 
+.banner {
+  max-width: 100%;
+}
+
+.banner__image {
+  width: 100%;
+  position: relative;
+}
+
 .btn {
   border: none;
   padding: 15px;
@@ -180,6 +189,11 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.container {
+  background-color: red;
+  border-radius: 25px 25px 0 0;
 }
 
 .header {
