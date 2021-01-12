@@ -1,5 +1,6 @@
 .fonctionnement {
 	padding-bottom: 25px;
+	counter-reset: counterFonctionnement;
 
 	&__step {
 		max-width: 100%;
@@ -14,16 +15,17 @@
 		padding: 20px;
 		width: 250px;
 		position: relative;
-	}
-	&__number {
-		color: white;
-		background-color: $color-primary;
-		border-radius: 100px;
-		font-size: 12px;
-		padding: 3px 7px 3px 7px;
-		z-index: 2;
-		left: -10px;
-		position: absolute;
+		&::before {
+			counter-increment: counterFonctionnement;
+			content: counter(counterFonctionnement);
+			color: white;
+			background-color: $color-primary;
+			border-radius: 100px;
+			font-size: 12px;
+			padding: 3px 7px 3px 7px;
+			left: -10px;
+			position: absolute;
+		}
 	}
 	&__icon {
 		padding-right: $padding-auto;

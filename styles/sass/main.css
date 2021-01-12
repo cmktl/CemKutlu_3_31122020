@@ -125,21 +125,36 @@ h1 {
   padding: 45px 15px 15px 15px;
 }
 
+.title-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title-restaurant h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.title-category {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  color: #353535;
+  border-bottom: 3px solid #99e2d0;
+  width: 30px;
+  height: 20px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   opacity: 0.7;
   font-size: 18px;
   padding-bottom: 15px;
-}
-
-.banner {
-  max-width: 100%;
-}
-
-.banner__image {
-  width: 100%;
-  position: relative;
 }
 
 .btn {
@@ -191,9 +206,31 @@ p {
           justify-content: space-between;
 }
 
+main {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.banner__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .container {
-  background-color: red;
-  border-radius: 25px 25px 0 0;
+  background-color: #eaeaea;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  border-radius: 35px 35px 0 0;
+  padding: 30px;
 }
 
 .header {
@@ -299,6 +336,7 @@ p {
 
 .fonctionnement {
   padding-bottom: 25px;
+  counter-reset: counterFonctionnement;
 }
 
 .fonctionnement__step {
@@ -321,13 +359,14 @@ p {
   position: relative;
 }
 
-.fonctionnement__number {
+.fonctionnement__button::before {
+  counter-increment: counterFonctionnement;
+  content: counter(counterFonctionnement);
   color: white;
   background-color: #9356dc;
   border-radius: 100px;
   font-size: 12px;
   padding: 3px 7px 3px 7px;
-  z-index: 2;
   left: -10px;
   position: absolute;
 }

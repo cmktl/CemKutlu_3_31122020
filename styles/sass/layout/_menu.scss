@@ -1,4 +1,26 @@
+main {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.banner {
+	max-width: 100%;
+
+	&__image {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+
 .container {
-	background-color: red;
-	border-radius: 25px 25px 0 0;
+	background-color: $dark-gray;
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	right: 0px;
+	border-radius: 35px 35px 0 0;
+	padding: $padding-auto * 2;
 }
