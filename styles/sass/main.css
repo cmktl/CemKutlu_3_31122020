@@ -121,6 +121,18 @@ h1 {
   padding-bottom: 15px;
 }
 
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 200;
+  text-align: left;
+}
+
 .title {
   padding: 45px 15px 15px 15px;
 }
@@ -164,6 +176,20 @@ p {
   margin: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.btn-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  margin: 15px 0 15px 0;
 }
 
 .btn-gradient {
@@ -225,12 +251,22 @@ main {
 
 .container {
   background-color: #eaeaea;
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: -50px;
   left: 0px;
   right: 0px;
   border-radius: 35px 35px 0 0;
   padding: 30px;
+}
+
+.commande {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -253,6 +289,9 @@ main {
 }
 
 .footer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 30px;
   background-color: #353535;
 }

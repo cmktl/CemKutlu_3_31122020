@@ -1,4 +1,6 @@
 .footer {
+	position: sticky;
+	top: 0;
 	padding: $padding-auto * 2;
 	background-color: $black-gray;
 	&__nav {

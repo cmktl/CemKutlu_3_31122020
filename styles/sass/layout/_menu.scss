@@ -17,10 +17,15 @@ main {
 
 .container {
 	background-color: $dark-gray;
-	position: absolute;
-	top: 200px;
+	position: relative;
+	top: -50px;
 	left: 0px;
 	right: 0px;
 	border-radius: 35px 35px 0 0;
 	padding: $padding-auto * 2;
+}
+
+.commande {
+	padding: $padding-auto;
+	@include flex-center;
 }
