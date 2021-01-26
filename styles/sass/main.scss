@@ -8,17 +8,12 @@
 @import 'base/typography';
 
 // components
-@import 'components/banner';
 @import 'components/buttons';
-@import 'components/steps';
-@import 'components/card';
 
 //layout
-@import 'layout/menu';
-@import 'layout/header';
-@import 'layout/explorer';
-@import 'layout/navigation';
 @import 'layout/footer';
-@import 'layout/localisation';
-@import 'layout/fonctionnement';
-@import 'layout/restaurants';
+
+// pages
+
+@import 'pages/home';
+@import 'pages/menu';

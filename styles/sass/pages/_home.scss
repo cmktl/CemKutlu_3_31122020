@@ -1,0 +1,95 @@
+.header {
+	margin-bottom: 6px;
+	padding: $padding-auto;
+	@include flex-center;
+	@include shadowHeader;
+}
+
+.localisation {
+	padding: $padding-auto;
+	@include flex-center;
+	background-color: $dark-gray;
+	&__icon {
+		padding-right: 10px;
+	}
+	&__searchbar {
+		width: 150px;
+		cursor: pointer;
+		border: none;
+		font-size: 15px;
+		background-color: $dark-gray;
+		font-family: $font-text;
+		&::placeholder {
+			opacity: 1;
+		}
+	}
+}
+
+.explorer {
+	background-color: $light-gray;
+	padding: $padding-auto * 3 $padding-auto $padding-auto * 3 $padding-auto;
+	text-align: center;
+}
+
+.fonctionnement {
+	padding-bottom: 25px;
+	counter-reset: counterFonctionnement;
+
+	&__step {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&__button {
+		font-size: 14px;
+		font-weight: 600;
+		padding: 20px;
+		width: 250px;
+		position: relative;
+		&::before {
+			counter-increment: counterFonctionnement;
+			content: counter(counterFonctionnement);
+			color: white;
+			background-color: $color-primary;
+			border-radius: 100px;
+			font-size: 12px;
+			padding: 3px 7px 3px 7px;
+			left: -10px;
+			position: absolute;
+		}
+	}
+	&__icon {
+		padding-right: $padding-auto;
+	}
+}
+.restaurant {
+	background-color: $light-gray;
+}
+.card-home {
+	max-width: 90%;
+	margin: auto;
+	border-radius: 15px;
+	background-color: white;
+
+	@include desktop {
+		max-width: 30%;
+	}
+
+	&__banner {
+		object-fit: cover;
+		width: 100%;
+		height: 185px;
+		border-radius: 15px 15px 0 0;
+	}
+	&__content {
+		margin: $margin-auto;
+		color: black;
+	}
+	&__title {
+		font-family: $font-text;
+		font-size: 18px;
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+	}
+}

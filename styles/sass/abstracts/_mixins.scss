@@ -3,6 +3,12 @@
 	justify-content: center;
 }
 
+@mixin flex-align-row {
+	display: flex;
+	flex-flow: column-reverse;
+	justify-content: space-between;
+}
+
 @mixin shadowHeader {
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
 }
@@ -31,4 +37,31 @@
 		$color-primary 100%
 	);
 	color: white;
+	@include desktop {
+		width: 30%;
+	}
+	@include tablet-portrait {
+		width: 30%;
+	}
+	@include tablet-landscape {
+		width: 30%;
+	}
+}
+
+// Media Query
+
+@mixin tablet-portrait {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
+@mixin tablet-landscape {
+	@media (min-width: 900px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
 }

@@ -200,92 +200,22 @@ p {
   width: 60%;
 }
 
-.card {
-  max-width: 90%;
-  margin: auto;
-  border-radius: 15px;
-  background-color: white;
+@media (min-width: 1200px) {
+  .btn-gradient {
+    width: 30%;
+  }
 }
 
-.card__banner {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 185px;
-  border-radius: 15px 15px 0 0;
+@media (min-width: 600px) {
+  .btn-gradient {
+    width: 30%;
+  }
 }
 
-.card__content {
-  margin: 15px;
-  color: black;
-}
-
-.card__title {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.banner {
-  max-width: 100%;
-}
-
-.banner__image {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.container {
-  background-color: #eaeaea;
-  position: relative;
-  top: -50px;
-  left: 0px;
-  right: 0px;
-  border-radius: 35px 35px 0 0;
-  padding: 30px;
-}
-
-.commande {
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header {
-  margin-bottom: 6px;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
-}
-
-.explorer {
-  background-color: #f6f6f6;
-  padding: 45px 15px 45px 15px;
-  text-align: center;
+@media (min-width: 900px) {
+  .btn-gradient {
+    width: 30%;
+  }
 }
 
 .footer {
@@ -333,6 +263,19 @@ main {
   padding-right: 18px;
 }
 
+.header {
+  margin-bottom: 6px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+}
+
 .localisation {
   padding: 15px;
   display: -webkit-box;
@@ -373,6 +316,12 @@ main {
   opacity: 1;
 }
 
+.explorer {
+  background-color: #f6f6f6;
+  padding: 45px 15px 45px 15px;
+  text-align: center;
+}
+
 .fonctionnement {
   padding-bottom: 25px;
   counter-reset: counterFonctionnement;
@@ -380,8 +329,6 @@ main {
 
 .fonctionnement__step {
   max-width: 100%;
-  z-index: 1;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,5 +363,81 @@ main {
 
 .restaurant {
   background-color: #f6f6f6;
+}
+
+.card-home {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+}
+
+@media (min-width: 1200px) {
+  .card-home {
+    max-width: 30%;
+  }
+}
+
+.card-home__banner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 185px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-home__content {
+  margin: 15px;
+  color: black;
+}
+
+.card-home__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  background-color: #eaeaea;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.banner__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  background-color: #eaeaea;
+  position: relative;
+  top: -50px;
+  left: 0px;
+  right: 0px;
+  border-radius: 35px 35px 0 0;
+  padding: 30px;
+}
+
+.commande {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
