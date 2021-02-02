@@ -37,8 +37,7 @@
 
 	&__step {
 		max-width: 100%;
-		display: flex;
-		justify-content: center;
+		@include flex-center;
 	}
 	&__button {
 		font-size: 14px;
@@ -60,6 +59,11 @@
 	}
 	&__icon {
 		padding-right: $padding-auto;
+	}
+	@include desktop {
+		.container-flex {
+			@include flex-align-row;
+		}
 	}
 }
 .restaurant {

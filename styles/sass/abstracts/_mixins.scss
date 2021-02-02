@@ -1,12 +1,13 @@
 @mixin flex-center {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 @mixin flex-align-row {
 	display: flex;
-	flex-flow: column-reverse;
-	justify-content: space-between;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
 @mixin shadowHeader {
