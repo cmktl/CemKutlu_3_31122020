@@ -75,6 +75,17 @@
 	margin: auto;
 	border-radius: 15px;
 	background-color: white;
+	position: relative;
+
+	&__title-new {
+		background-color: rgb(153, 226, 208);
+		color: rgb(0, 135, 102);
+		padding: 8px 15px 8px 15px;
+		border-radius: 3px;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+	}
 
 	&__banner {
 		object-fit: cover;

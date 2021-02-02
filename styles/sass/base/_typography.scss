@@ -36,6 +36,11 @@ h4 {
 	height: 20px;
 }
 
+.title-new {
+	font-family: $font-text;
+	font-weight: 600;
+}
+
 p {
 	@include description;
 }
