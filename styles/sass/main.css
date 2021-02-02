@@ -218,6 +218,11 @@ p {
   }
 }
 
+.like-icon:hover {
+  background-color: red;
+  color: red;
+}
+
 .footer {
   position: -webkit-sticky;
   position: sticky;
@@ -455,6 +460,12 @@ main {
   position: relative;
   top: 0;
   left: 0;
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    height: 350px;
+  }
 }
 
 .container {
