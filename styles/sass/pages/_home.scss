@@ -56,14 +56,15 @@
 			left: -10px;
 			position: absolute;
 		}
+		&:hover {
+			background-color: $color-ligth-primary;
+			.fonctionnement__icon {
+				color: $color-primary;
+			}
+		}
 	}
 	&__icon {
 		padding-right: $padding-auto;
-	}
-	@include desktop {
-		.container-flex {
-			@include flex-align-row;
-		}
 	}
 }
 .restaurant {
@@ -74,10 +75,6 @@
 	margin: auto;
 	border-radius: 15px;
 	background-color: white;
-
-	@include desktop {
-		max-width: 30%;
-	}
 
 	&__banner {
 		object-fit: cover;
@@ -95,5 +92,15 @@
 		font-weight: 600;
 		display: flex;
 		justify-content: space-between;
+	}
+}
+
+@include desktop {
+	.container-flex {
+		@include flex-align-row;
+		& > a {
+			width: 50%;
+			margin-bottom: 20px;
+		}
 	}
 }
