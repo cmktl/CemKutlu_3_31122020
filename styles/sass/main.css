@@ -467,6 +467,14 @@ main {
   left: 0;
 }
 
+.header .back-button {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 25px;
+  padding-top: 10px;
+}
+
 .banner {
   max-width: 100%;
 }

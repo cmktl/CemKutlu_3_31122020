@@ -6,7 +6,13 @@ main {
 }
 
 .header {
-	display: flex;
+	.back-button {
+		text-decoration: none;
+		color: black;
+		position: absolute;
+		left: 25px;
+		padding-top: 10px;
+	}
 }
 
 .banner {
