@@ -507,8 +507,12 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .banner {
-    height: 350px;
+  .banner__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 350px;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
 }
 
