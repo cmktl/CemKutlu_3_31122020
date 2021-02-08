@@ -223,9 +223,29 @@ p {
   }
 }
 
-.like-icon:hover {
-  background-color: red;
-  color: red;
+.like .dislike-icon {
+  color: #9356dc;
+  position: relative;
+  opacity: 1;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.like .dislike-icon:hover {
+  opacity: 0;
+}
+
+.like .like-icon {
+  color: #9356dc;
+  position: relative;
+  left: -22px;
+  opacity: 0;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.like .like-icon:hover {
+  opacity: 1;
 }
 
 .footer {
