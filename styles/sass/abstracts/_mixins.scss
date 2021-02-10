@@ -50,6 +50,14 @@
 	}
 }
 
+// loading spinner
+
+.wrapper {
+	.loading-spinner__logo {
+		width: 200px;
+	}
+}
+
 // Media Query
 
 @mixin tablet-portrait {

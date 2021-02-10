@@ -1,0 +1,45 @@
+.loader-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba($color: white, $alpha: 0.9);
+	animation: loader 1s ease-in-out both;
+	animation-delay: 3s;
+	z-index: 1;
+	.wrapper {
+		position: relative;
+		& img {
+			position: absolute;
+			width: 150px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.circle {
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			border: 3px solid #f1f1f1;
+			animation: 1s linear infinite alternate spin;
+		}
+	}
+	@keyframes spin {
+		from {
+			box-shadow: 0 0 0 $color-primary, 0 0 0 $color-secondary,
+				0 0 0 $color-tertiary, 0 0 0 $color-secondary;
+		}
+		to {
+			box-shadow: 0 -10px 0 $color-primary, -10px 0 0 $color-secondary,
+				0 10px 0 $color-tertiary, 10px 0 0 $color-secondary;
+		}
+	}
+	@keyframes loader {
+		100% {
+			opacity: 0;
+			z-index: -10;
+		}
+	}
+}

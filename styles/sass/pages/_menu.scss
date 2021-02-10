@@ -45,3 +45,14 @@ main {
 	padding: $padding-auto;
 	@include flex-center;
 }
+
+.menu {
+	display: flex;
+	flex-flow: column;
+	align-self: center;
+
+	h4 {
+		display: flex;
+		justify-content: space-between;
+	}
+}
