@@ -58,6 +58,9 @@ main {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 	.menu {
 		flex: 1;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 	}
 
 	.menu-price {
