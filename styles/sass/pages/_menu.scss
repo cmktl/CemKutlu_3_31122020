@@ -46,13 +46,52 @@ main {
 	@include flex-center;
 }
 
-.menu {
+.menu-plat {
+	background-color: $dark-gray;
+	width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
 	display: flex;
-	flex-flow: column;
-	align-self: center;
+	padding: $padding-auto;
+	margin: 1rem 0;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	.menu {
+		flex: 1;
+	}
 
-	h4 {
+	.menu-price {
+		font-weight: 700;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding-left: 0.5rem;
+	}
+
+	.menu-check__btn {
+		background-color: $color-tertiary;
+		margin: -1rem -5rem -1rem 1rem;
+		width: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition-duration: 0.5s;
+	}
+	&:hover .menu-check__btn {
+		margin-right: -1rem;
+	}
+
+	.check-icon {
+		width: 1.6rem;
+		color: white;
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: rotate(180deg);
+		transition-duration: 0.5s;
+	}
+	&:hover .check-icon {
+		transform: rotate(0);
 	}
 }

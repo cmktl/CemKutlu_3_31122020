@@ -3,14 +3,16 @@ h1 {
 }
 
 h3 {
+	font-family: $font-text;
 	font-size: 14px;
 	font-weight: 600;
 	text-align: left;
 }
 
 h4 {
+	font-family: $font-text;
 	font-size: 12px;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: left;
 }
 .title {
@@ -43,4 +45,9 @@ h4 {
 
 p {
 	@include description;
+}
+
+strong {
+	font-family: $font-text;
+	font-size: 12px;
 }

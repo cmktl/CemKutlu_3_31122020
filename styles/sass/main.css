@@ -127,6 +127,11 @@
           animation-delay: 0.33333s;
 }
 
+.fade-3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
 *,
 *:before,
 *:after {
@@ -251,14 +256,16 @@ h1 {
 }
 
 h3 {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-align: left;
 }
 
 h4 {
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -301,6 +308,11 @@ p {
   opacity: 0.7;
   font-size: 18px;
   padding-bottom: 15px;
+}
+
+strong {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 
 .btn {
@@ -346,22 +358,6 @@ p {
   }
 }
 
-.check-btn {
-  background-color: #99e2d0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-right: -100px;
-}
-
 .like .dislike-icon {
   color: #9356dc;
   position: relative;
@@ -385,11 +381,6 @@ p {
 
 .like .like-icon:hover {
   opacity: 1;
-}
-
-.check-icon {
-  font-size: 22px;
-  color: white;
 }
 
 .footer {
@@ -684,24 +675,83 @@ main {
           align-items: center;
 }
 
-.menu {
+.menu-plat {
+  background-color: #eaeaea;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-item-align: center;
-      align-self: center;
+  padding: 15px;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.menu h4 {
+.menu-plat .menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu-plat .menu-price {
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 0.5rem;
+}
+
+.menu-plat .menu-check__btn {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.menu-plat:hover .menu-check__btn {
+  margin-right: -1rem;
+}
+
+.menu-plat .check-icon {
+  width: 1.6rem;
+  color: white;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.menu-plat:hover .check-icon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 /*# sourceMappingURL=main.css.map */
