@@ -1,0 +1,20 @@
+//abstracts
+
+@import '../sass/abstracts/animation';
+@import '../sass/abstracts/mixins';
+@import '../sass/abstracts/variables';
+
+// base
+@import '../sass/base/reset';
+@import '../sass/base/typography';
+
+// components
+@import '../sass/components/buttons';
+@import '../sass/components/like';
+
+// layout
+@import '../sass/layout/footer';
+
+// pages
+@import '../sass/pages/home';
+@import '../sass/pages/menu';
