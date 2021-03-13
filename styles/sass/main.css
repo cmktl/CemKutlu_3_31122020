@@ -677,7 +677,7 @@ main {
 
 .menu-plat {
   background-color: #eaeaea;
-  width: 100%;
+  width: 280px;
   border-radius: 15px;
   overflow: hidden;
   display: -webkit-box;
@@ -695,6 +695,16 @@ main {
       -ms-flex: 1;
           flex: 1;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-plat .menu h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-plat .menu h4 {
   text-overflow: ellipsis;
   overflow: hidden;
 }

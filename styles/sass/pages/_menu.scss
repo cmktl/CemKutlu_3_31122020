@@ -48,7 +48,7 @@ main {
 
 .menu-plat {
 	background-color: $dark-gray;
-	width: 100%;
+	width: 280px;
 	border-radius: 15px;
 	overflow: hidden;
 	display: flex;
@@ -61,6 +61,14 @@ main {
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		h3 {
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		h4 {
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
 	}
 
 	.menu-price {
