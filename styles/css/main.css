@@ -118,18 +118,48 @@
 }
 
 .fade-1 {
-  -webkit-animation-delay: 0.16667s;
-          animation-delay: 0.16667s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 .fade-2 {
-  -webkit-animation-delay: 0.33333s;
-          animation-delay: 0.33333s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .fade-3 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.fade-4 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.fade-5 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.fade-6 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.fade-7 {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.fade-8 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.fade-9 {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
 }
 
 *,
@@ -140,63 +170,8 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
-/* 
-html,
-body,
-div,
-span,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strong,
-tt,
-i,
-ol,
-ul,
-li,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-footer,
-header,
-nav,
-section {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	text-size-adjust: none;
-}
-*/
 footer,
 header,
 nav,
@@ -250,15 +225,17 @@ h1 {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   text-align: left;
+  margin-bottom: 5px;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  color: dimgray;
+  font-size: 13px;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -308,6 +285,10 @@ strong {
   font-size: 12px;
 }
 
+button {
+  font-family: "Roboto", sans-serif;
+}
+
 .btn {
   border: none;
   padding: 15px;
@@ -331,28 +312,72 @@ strong {
   font-size: 15px;
   border-radius: 25px;
   width: 60%;
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
 
-@media (min-width: 1200px) {
+.btn-gradient:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 15px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 15px 5px;
+}
+
+@media only screen and (min-width: 992px) {
   .btn-gradient {
-    width: 30%;
+    width: 10%;
   }
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
   .btn-gradient {
-    width: 30%;
+    width: 10%;
   }
 }
 
-@media (min-width: 900px) {
+@media only screen and (max-width: 600px) {
   .btn-gradient {
-    width: 30%;
+    width: 25%;
   }
+}
+
+@media only screen and (min-width: 600px) {
+  .btn-gradient {
+    width: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .btn-gradient {
+    width: 50%;
+  }
+}
+
+.like {
+  height: 20px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.like:hover {
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .like .dislike-icon {
-  color: #9356dc;
+  font-size: 20px;
+  color: black;
   position: relative;
   opacity: 1;
   -webkit-transition: all 100ms;
@@ -364,9 +389,13 @@ strong {
 }
 
 .like .like-icon {
-  color: #9356dc;
+  font-size: 20px;
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
-  left: -22px;
+  top: -20px;
+  left: 0;
   opacity: 0;
   -webkit-transition: all 100ms;
   transition: all 100ms;
@@ -541,6 +570,7 @@ strong {
 
 .restaurant {
   background-color: #f6f6f6;
+  padding-bottom: 1px;
 }
 
 .card-home {
@@ -586,7 +616,30 @@ strong {
           justify-content: space-between;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container-flex > a {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .container-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,9 +685,20 @@ main {
   position: relative;
   top: 0;
   left: 0;
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
+  .banner__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 350px;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .banner__image {
     -o-object-fit: cover;
        object-fit: cover;
@@ -669,8 +733,8 @@ main {
 }
 
 .menu-plat {
-  background-color: #eaeaea;
-  width: 280px;
+  background-color: white;
+  max-width: 100%;
   border-radius: 15px;
   overflow: hidden;
   display: -webkit-box;
@@ -681,6 +745,19 @@ main {
   cursor: pointer;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (min-width: 992px) {
+  .menu-plat {
+    width: 315px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu-plat {
+    width: 315px;
+  }
 }
 
 .menu-plat .menu {
