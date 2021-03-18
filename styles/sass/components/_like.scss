@@ -1,21 +1,19 @@
 .like {
-	width: 25px;
-	height: 25px;
+	height: 20px;
 	padding: 0;
 	@include flex-center;
 	cursor: pointer;
 	position: relative;
+	&:hover {
+		@include gradient-like-btn;
+	}
 
 	.dislike-icon {
 		font-size: 20px;
 		color: black;
 		position: relative;
-
+		opacity: 1;
 		transition: all 100ms;
-
-		&:before {
-			opacity: 1;
-		}
 		&:hover {
 			opacity: 0;
 		}
@@ -26,14 +24,10 @@
 		position: relative;
 		top: -20px;
 		left: 0;
-
+		opacity: 0;
 		transition: all 100ms;
 		&:hover {
 			opacity: 1;
-		}
-
-		&:before {
-			opacity: 0;
 		}
 	}
 }

@@ -353,8 +353,7 @@ button {
 }
 
 .like {
-  width: 25px;
-  height: 25px;
+  height: 20px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,16 +369,19 @@ button {
   position: relative;
 }
 
+.like:hover {
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .like .dislike-icon {
   font-size: 20px;
   color: black;
   position: relative;
+  opacity: 1;
   -webkit-transition: all 100ms;
   transition: all 100ms;
-}
-
-.like .dislike-icon:before {
-  opacity: 1;
 }
 
 .like .dislike-icon:hover {
@@ -394,16 +396,13 @@ button {
   position: relative;
   top: -20px;
   left: 0;
+  opacity: 0;
   -webkit-transition: all 100ms;
   transition: all 100ms;
 }
 
 .like .like-icon:hover {
   opacity: 1;
-}
-
-.like .like-icon:before {
-  opacity: 0;
 }
 
 .footer {
@@ -571,6 +570,7 @@ button {
 
 .restaurant {
   background-color: #f6f6f6;
+  padding-bottom: 1px;
 }
 
 .card-home {
