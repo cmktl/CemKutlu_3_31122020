@@ -39,15 +39,16 @@
 		$color-primary 100%
 	);
 	color: white;
-	@include desktop {
-		width: 30%;
-	}
-	@include tablet-portrait {
-		width: 30%;
-	}
-	@include tablet-landscape {
-		width: 30%;
-	}
+}
+
+@mixin gradient-like-btn($degrees: 45deg) {
+	background: linear-gradient(
+		$degrees,
+		$color-secondary 0%,
+		$color-primary 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 // loading spinner
@@ -61,17 +62,26 @@
 // Media Query
 
 @mixin tablet-portrait {
-	@media (min-width: 600px) {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+
+	@media only screen and (min-width: 600px) {
 		@content;
 	}
 }
 @mixin tablet-landscape {
-	@media (min-width: 900px) {
+	@media (max-width: 900px) {
 		@content;
 	}
 }
 @mixin desktop {
-	@media (min-width: 1200px) {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
 		@content;
 	}
 }

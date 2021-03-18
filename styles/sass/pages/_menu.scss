@@ -47,8 +47,8 @@ main {
 }
 
 .menu-plat {
-	background-color: $dark-gray;
-	width: 280px;
+	background-color: white;
+	max-width: 100%;
 	border-radius: 15px;
 	overflow: hidden;
 	display: flex;
@@ -56,6 +56,10 @@ main {
 	margin: 1rem 0;
 	cursor: pointer;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	@include desktop {
+		width: 315px;
+	}
+
 	.menu {
 		flex: 1;
 		white-space: nowrap;

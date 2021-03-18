@@ -17,4 +17,19 @@
 	font-size: 15px;
 	border-radius: 25px;
 	width: 60%;
+
+	&:hover {
+		filter: brightness(110%);
+		box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 15px 5px;
+	}
+
+	@include desktop {
+		width: 10%;
+	}
+	@include tablet-portrait {
+		width: 25%;
+	}
+	@include tablet-landscape {
+		width: 50%;
+	}
 }
